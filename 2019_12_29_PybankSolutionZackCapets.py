@@ -100,9 +100,9 @@ with open(outputpath, 'w', newline='') as results:
    
     #write the results in the format requested
     csvwriter.writerow(["Number of months of budget data: ", total_months])
-    csvwriter.writerow(["Total profit over time period analyzed:", '${:,.2f}'.format(round(total_profit,2))])
-    csvwriter.writerow(["Biggest monthly increase in profit:", round(big_gain,2), great_month])
-    csvwriter.writerow(["Biggest monthly decrease in profit:", round(big_loss,2), bad_month])
-    csvwriter.writerow(["Average P/L over time period:", round(avg_delta,2)])
+    csvwriter.writerow(["Total profit over time period analyzed: $", round(total_profit,2)])
+    csvwriter.writerow(["Biggest monthly increase in profit: $", round(big_gain,2), great_month])
+    csvwriter.writerow(["Biggest monthly decrease in profit: $", round(big_loss,2), bad_month])
+    csvwriter.writerow(["Average P/L over time period: $", round(avg_delta,2)])
     
 print(f'Your file analysis is complete, your results are here: {outputpath}')     
